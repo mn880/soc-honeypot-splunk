@@ -4,11 +4,11 @@
 This project simulates a **Security Operations Center (SOC) environment** by deploying a **Cowrie honeypot** on an Ubuntu VM and forwarding logs to **Splunk Enterprise** running on a Kali Linux VM.  
 An attacker VM (Kali pre-built) was used to generate brute-force attempts using **Hydra**, and all events were captured and visualized in Splunk dashboards.
 
-**Goal:** Learn how logs are ingested, monitored, and analyzed within a SOC-style environment..
+**Goal:** Learn how logs are ingested, monitored, and analyzed within a SOC-style environment
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 - **Splunk Enterprise** (SIEM for log collection & dashboards)  
 - **Splunk Universal Forwarder** (log forwarding from Ubuntu to Splunk)  
 - **Cowrie Honeypot** (SSH/Telnet honeypot to simulate attacks)  
@@ -17,7 +17,7 @@ An attacker VM (Kali pre-built) was used to generate brute-force attempts using 
 
 ---
 
-## ⚙️ Lab Setup (High-Level)
+## Lab Setup (High-Level)
 1. **Splunk Enterprise VM (Kali)**  
    - Installed Splunk Enterprise.  
    - Configured receiving on port `9997`.  
@@ -46,21 +46,6 @@ An attacker VM (Kali pre-built) was used to generate brute-force attempts using 
 
 ---
 
-## Repo Contents
-
--README.md → this documentation
-
--SOC_HONEYPOT_SPLUNK_LAB_SS.pdf → screenshots and evidence
-
----
-
-## Resume Bullets
-
--Built a multi-VM SOC lab: deployed Splunk Enterprise and Cowrie honeypot; configured Splunk Universal Forwarder to ingest Cowrie JSON logs.
-
--Verified ingestion in Splunk using searches (index=main sourcetype=cowrie_json).
-
--Simulated brute-force attacks with Hydra to test detection pipeline.
 
 ---
 
